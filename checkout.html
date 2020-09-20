@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITRINE - Checkout</title>
+    <!-- CSS FILES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION -->
+    <section class="header-section mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header d-flex justify-content-between align-items-center">
+                        <button class="nav-icon">
+                            <div class="line line-1"></div>
+                            <div class="line line-2"></div>
+                            <div class="line line-3"></div>
+                        </button>
+                        <div class="header-text">
+                            <h6>CHECKOUT</h6>
+                        </div>
+                        <div class="cart-icon">
+                            <a href="#">
+                                <span class="cart-amount">
+                                    $ 89, 9C
+                                </span>
+                                <span class="fa fa-shopping-cart"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- START HEADER SECTION -->
+    <section class="site-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="shop-header">
+                        <div class="main-content">
+                            <div class="shop-logo">
+                                <img class="img-fluid" src="images/logo.svg" alt="">
+                            </div>
+                            <div class="shop-info-on-mobile">
+                                <h6 class="name pt-4">Onitsukatigerindia</h6>
+                            </div>
+                            <div class="shop-details">
+                                <div class="shop-info-on-desktop">
+                                    <h5 class="shop-name">Onitsukatigerindia</h5>
+                                </div>
+                                <div class="order-container">
+                                    <div class="order-pricing-details">
+                                        <div class="cost-of-items">
+                                            <p>Cost of Items</p>
+                                            <p>$ 99,90</p>
+                                        </div>
+                                        <div class="delivery-fees">
+                                            <p>Delivery</p>
+                                            <p>+$ 0,00</p>
+                                        </div>
+                                        <div class="order-totals">
+                                            <p>Order Total</p>
+                                            <p>$ 99,00</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-links">
+                                        <a href="index.html">
+                                            Keep Buying
+                                        </a>
+                                        <a href="update-order.html">
+                                            Change Order
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SITE HEADER SECTION -->
+
+    <!-- CHECKOUT FORM -->
+    <section class="checkout-form-section mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- START CHECKOUT FORM -->
+                <div class="col-md-12 col-lg-10">
+                    <div class="checkout-form">
+                        <form action="">
+                            <!-- PAYMENT AND PICKUP SECTION -->
+                            <div class="payment-method-section mb-3">
+                                <div class="form-row justify-content-between">
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <select name="" id="">
+                                                <option value="">Payment Method</option>
+                                            </select>
+                                            <span class="fa fa-caret-down arrow-icon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <select name="" id="">
+                                                <option value="">Pickup or Delivery</option>
+                                            </select>
+                                            <span class="fa fa-caret-down arrow-icon"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PAYMENT AND PICKUP SECTION -->
+
+                            <!-- DELIVERY INFORMATION SECTION -->
+                            <div class="deliver-info-section mb-3">
+                                <h5>Delivery Information</h5>
+                                <div class="form-row justify-content-between">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="input-field">
+                                            <input type="number" name="" id="" placeholder="Zipcode">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <input type="text" name="" id="" placeholder="Address">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <input type="number" name="" id="" placeholder="Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-12">
+                                        <div class="input-field">
+                                            <input type="number" name="" id="" placeholder="Reference">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <textarea name="" id="" cols="30" rows="7"
+                                                placeholder="Additional Information"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="delivery-location mb-3">
+                                            <div id="map" class="map"></div>
+                                            <button>
+                                                <img class="img-fluid" src="images/location-arrow.png" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END DELIVERY INFORMATION SECTION -->
+
+                            <!-- LOCATION SECTION -->
+                            <!-- <div class="delivery-location mb-3">
+                                <div id="map" class="map"></div>
+                                <button>
+                                    <img class="img-fluid" src="images/location-arrow.png" alt="">
+                                </button>
+                            </div> -->
+                            <!-- END LOCATION SECTION -->
+
+                            <!-- PERSONAL INFORMATION SECTION -->
+                            <div class="personal-info-section">
+                                <h5>Personal Information</h5>
+                                <div class="form-row">
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <input type="text" name="" id="" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-lg-6">
+                                        <div class="input-field">
+                                            <input type="number" name="" id="" placeholder="Whatsapp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END PERSONAL INFORMATION SECTION -->
+
+                            <button type="submit" class="confirm-button">Buy Using Whatsapp</button>
+                            <p class="payment-note">The payment link will be sent after the order confirmation</p>
+                        </form>
+                    </div>
+                </div>
+                <!-- END CHECKOUT FORM -->
+            </div>
+        </div>
+    </section>
+    <!-- END CHECKOUT FORM -->
+
+
+    <!-- BOOTSTRAP DEPENDENCIES -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+
+</body>
+
+</html>

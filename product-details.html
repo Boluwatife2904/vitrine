@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VITRINE - Product Details</title>
+    <!-- CSS FILES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- START HEADER SECTION -->
+    <section class="site-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="shop-header">
+                        <div class="main-content">
+                            <div class="shop-logo">
+                                <img class="img-fluid" src="images/logo.svg" alt="">
+                            </div>
+                            <div class="shop-info-on-mobile">
+                                <h6 class="name">Onitsukatigerindia</h6>
+                                <p class="shop-offer"><span class="fa fa-map-marker-alt"></span> Free Shipping</p>
+                                <p class="shop-offer"><span class="fa fa-credit-card"></span> $US 50,00 minimum order</p>
+                            </div>
+                            <div class="shop-details">
+                                <div class="shop-info-on-desktop">
+                                    <h5 class="shop-name">Onitsukatigerindia</h5>
+                                    <p class="shop-offer"><span class="fa fa-map-marker-alt"></span> Free Shipping</p>
+                                    <p class="shop-offer"><span class="fa fa-credit-card"></span> $US 50,00 minimum order</p>
+                                </div>
+
+                                <div class="social-media-link">
+                                    <div class="social-media">
+                                        <a href="#">
+                                            <span class="fab fa-whatsapp icon"></span>
+                                            <span class="name">Whatsapp</span>
+                                        </a>
+                                    </div>
+                                    <div class="social-media">
+                                        <a href="#">
+                                            <span class="fa fa-envelope icon"></span>
+                                            <span class="name">Email</span>
+                                        </a>
+                                    </div>
+                                    <div class="social-media">
+                                        <a href="#">
+                                            <span class="fa fa-phone flipped icon"></span>
+                                            <span class="name">Phone</span>
+                                        </a>
+                                    </div>
+                                    <div class="social-media">
+                                        <a href="#">
+                                            <span class="fab fa-instagram icon"></span>
+                                            <span class="name">Instagram</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SITE HEADER SECTION -->
+
+    <!-- PRODUCT DETAILS CARD SECTION -->
+    <section class="product-details mb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- PRODUCT DETAILS GOES IN HERE -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="product-details">
+                        <!-- PRODUCT IMAGE GOES IN HERE -->
+                        <div class="product-image">
+                            <img class="img-fluid" src="images/hanged-shirts-2.jpg" alt="">
+                            <span class="price-tag">$ 89, 9C</span>
+                        </div>
+                        <!-- PRODUCT LINKS (SHARE AND LIKE) GOES IN HERE -->
+                        <div class="product-links mb-4 d-flex justify-content-between">
+                            <div class="like-and-share">
+                                <a href="#" class="like-button liked">
+                                    <span class="fa fa-heart"></span>
+                                </a>
+                                <a href="#" class="share-button">
+                                    <span class="fa fa-share-alt"></span>
+                                </a>
+                            </div>
+                            <!-- MODAL FOR BUYING PRODUCT -->
+                            <div class="modal-for-buying-product">
+                                <a href="#" data-toggle="modal" data-target="#buyproductmodal">
+                                    <span class="fa fa-shopping-cart"></span>
+                                </a>
+                                <div class="modal fade" id="buyproductmodal" tabindex="-1" role="dialog"
+                                    aria-labelledby="buyproductmodalTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <div class="product-price-and-title">
+                                                    <h5 class="modal-title" id="buyproductmodalTitle">Onitsukatigerindia
+                                                    </h5>
+                                                    <div class="product-price">
+                                                        <p class="new-price">$ 89, 99C</p>
+                                                        <p class="old-price">$ 92, 9C</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true" class="fa fa-times"></span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form action="">
+                                                    <div class="input-field">
+                                                        <select name="" id="">
+                                                            <option value="">Favorites, Colors, etc</option>
+                                                        </select>
+                                                        <span class="fa fa-caret-down arrow-icon"></span>
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <textarea name="" id="" cols="30" rows="5"
+                                                            placeholder="Any additional information about them?"></textarea>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-lg-4 col-md-12 mb-4">
+                                                            <!-- UPDATE QUANTITY -->
+                                                            <div class="product-quantity text-center">
+                                                                <a href="#" class="decrease">
+                                                                    <span class="fa fa-minus"></span>
+                                                                </a>
+                                                                <span class="quantity">600</span>
+                                                                <a href="#" class="increase">
+                                                                    <span class="fa fa-plus"></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-8 col-md-12">
+                                                            <button type="submit">Add to Cart</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PRODUCT DESCRIPTION GOES IN HERE -->
+                        <div class="product-description">
+                            <div class="quantity-and-product-details d-flex justify-content-between">
+                                <!-- DESCRIPTION AND PRICE -->
+                                <div class="price-and-text">
+                                    <h5 class="description-title">Product Description ABC</h5>
+                                    <div class="product-price">
+                                        <p class="new-price">$ 89, 99C</p>
+                                        <p class="old-price">$ 92, 9C</p>
+                                    </div>
+                                </div>
+                                <!-- UPDATE QUANTITY -->
+                                <div class="product-quantity">
+                                    <a href="#" class="decrease">
+                                        <span class="fa fa-minus"></span>
+                                    </a>
+                                    <span class="quantity">600</span>
+                                    <a href="#" class="increase">
+                                        <span class="fa fa-plus"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <p class="description-text">
+                                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text. Lorem ipsum is simply dummy text of the
+                                printing and typesetting industry...
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ORDER INFORMATION -->
+                    <div class="order-information">
+                        <form action="">
+                            <!-- SELECT FLAVORS, COLORS ETC -->
+                            <div class="input-field">
+                                <select name="" id="">
+                                    <option value="">Flavors, Colors etc</option>
+                                </select>
+                                <span class="fa fa-caret-down arrow-icon"></span>
+                            </div>
+                            <!-- ADDITIONAL INFORMATION -->
+                            <div class="input-field">
+                                <textarea name="" id="" cols="30" rows="5"
+                                    placeholder="Any additional information about them?"></textarea>
+                            </div>
+                            <!-- UPDATE QUANTITY -->
+                            <div class="product-quantity text-center">
+                                <a href="#" class="decrease">
+                                    <span class="fa fa-minus"></span>
+                                </a>
+                                <span class="quantity">600</span>
+                                <a href="#" class="increase">
+                                    <span class="fa fa-plus"></span>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BOOTSTRAP DEPENDENCIES -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
