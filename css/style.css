@@ -857,6 +857,8 @@ input[type="number"] {
 
 .category-section .single-category {
   width: 20%;
+  text-decoration: none;
+  outline: none;
 }
 
 .category-section .single-category p {
