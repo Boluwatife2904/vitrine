@@ -912,10 +912,10 @@ input[type="number"] {
   /* END UPDATE ORDER MEDIA QUERIES */
 
   /* IMAGES RESPONSIVENESS ON MOBILE  */
-  .product-with-description .product-image img
+  .product-with-description .product-image img,
   .product-details .product-image img,
   .single-product img{
-    height: 250px;
+    height: 240px;
   }
 
   /* END IMAGE RESPONSIVENESS ON MOBILE */
