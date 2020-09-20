@@ -393,6 +393,7 @@ input[type="number"] {
   max-height: 350px;
   margin-bottom: 15px;
   text-decoration: none;
+  position: relative;
 }
 
 .photos-only-section .single-product-container img{
@@ -401,6 +402,17 @@ input[type="number"] {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
+}
+
+.photos-only-section .single-product-container .tagged-price{
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+  background-color: #ffffff;
+  color: #112f3e;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-family: "Radomir Bold", sans-serif;
 }
 
 
