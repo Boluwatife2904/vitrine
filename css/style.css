@@ -101,10 +101,6 @@ button:active {
   margin-right: 5px;
 }
 
-/* SHOP INFORMATION HEADER */
-
-/* END SHOP HEADER */
-
 /* START STYLING OF FORM ELEMENTS */
 .input-field {
   margin-bottom: 25px;
@@ -843,6 +839,88 @@ input[type="number"] {
 }
 /* END SHOP HEADER SOCIAL MEDIA LINKS */
 
+/* START CATEGORIES STYLING */
+.categories h5{
+  font-family: "Radomir Medium", sans-serif;
+  color: #112f3e;
+  font-size: 22px;
+}
+
+.category-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eeeeee;
+}
+
+.category-section .single-category {
+  width: 20%;
+}
+
+.category-section .single-category p {
+  text-align: center;
+  margin-bottom: 0;
+  letter-spacing: 0.025rem;
+  font-size: 15px;
+  color: #112f3e;
+  font-family: "Radomir Medium";
+}
+
+.box {
+  background: white;
+  width: auto;
+  height: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.box-inner {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+
+.box-inner .box-img img {
+  width: 40px;
+}
+
+.box-inner.denim .box-img img {
+  width: 25px;
+}
+
+/* Utilities */
+
+.clothes {
+  background: #ffe4e4;
+  border: 1px solid rgba(255, 228, 228, 0.8);
+}
+
+.boots {
+  background: #fff6e5;
+  border: 1px solid rgba(255, 246, 229, 0.8);
+}
+
+.denim {
+  background: #e5eff7;
+  border: 1px solid rgba(229, 239, 247, 0.8);
+}
+
+.sweater {
+  background: #f0edec;
+  border: 1px solid rgba(240, 237, 236, 0.8);
+}
+
+.backpack {
+  background: #fefcf7;
+  border: 1px solid rgba(254, 252, 247, 0.8);
+}
+/* END CATEGORIES STYLINGS */
+
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 @media screen and (max-width: 480px) {
   .single-order .media img {
@@ -945,7 +1023,7 @@ input[type="number"] {
 }
 
 @media screen and (max-width: 992px) {
-  .tab-text{
+  .tab-text {
     display: none;
   }
 }
@@ -970,6 +1048,30 @@ input[type="number"] {
   }
 }
 
+@media (max-width:492px){
+  .box {
+    width: auto;
+    height: 80px;
+  }
+
+  .box-inner {
+    width: 50px;
+    height: 50px;
+  }
+
+  .box-inner .box-img img {
+    width: 25px;
+  }
+
+  .box-inner.denim .box-img img {
+    width: 15px;
+  }
+
+  .category-section .single-category p {
+    font-size: 12px;
+  }
+}
+
 @media screen and (max-width: 392px) {
   .processed-items .media .media-body h5 {
     font-size: 16px;
@@ -981,4 +1083,5 @@ input[type="number"] {
   .processed-items .media .media-body .total-price {
     font-size: 14px;
   }
+
 }
