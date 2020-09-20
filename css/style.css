@@ -886,7 +886,7 @@ input[type="number"] {
   /* END INCREASE QUANTITY MEDIA QUERIES */
 
   
-  /* START FORM ELEMENTS MEDIA QUERIE */
+  /* START FORM ELEMENTS MEDIA QUERIES */
   .input-field {
     margin-bottom: 15px;
   }
@@ -911,16 +911,14 @@ input[type="number"] {
 
   /* END UPDATE ORDER MEDIA QUERIES */
 
-  /* FAVORITES PAGE  */
-  .product-with-description .product-image img{
-    height: 250px;
-  }
-
+  /* IMAGES RESPONSIVENESS ON MOBILE  */
+  .product-with-description .product-image img
+  .product-details .product-image img,
   .single-product img{
     height: 250px;
   }
 
-  /* END FAVORITES PAGE MEDIA QUERIES */
+  /* END IMAGE RESPONSIVENESS ON MOBILE */
 
 
   /* PAYING BY CASH AND CREDIT CARD MEDIA QUERIES */
