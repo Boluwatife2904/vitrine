@@ -380,6 +380,30 @@ input[type="number"] {
   margin-right: 5px;
 }
 
+
+/* PHOTOS ONLY SECTION */
+.photos-only-section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos-only-section .single-product-container{
+  width: 33.3%;
+  padding: 5px;
+  max-height: 350px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.photos-only-section .single-product-container img{
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
 /* BIG PHOTO SECTION */
 .big-photo-section a {
   text-decoration: none;
@@ -840,7 +864,7 @@ input[type="number"] {
 /* END SHOP HEADER SOCIAL MEDIA LINKS */
 
 /* START CATEGORIES STYLING */
-.categories h5{
+.categories h5 {
   font-family: "Radomir Medium", sans-serif;
   color: #112f3e;
   font-size: 22px;
@@ -895,8 +919,6 @@ input[type="number"] {
   width: 25px;
 }
 
-/* Utilities */
-
 .clothes {
   background: #ffe4e4;
   border: 1px solid rgba(255, 228, 228, 0.8);
@@ -923,7 +945,7 @@ input[type="number"] {
 }
 /* END CATEGORIES STYLINGS */
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* MEDIA QUERIES FOR RESPONSIVENESS (SMALL SCREEN SIZES) */
 @media screen and (max-width: 480px) {
   .single-order .media img {
     height: 120px;
@@ -1023,14 +1045,14 @@ input[type="number"] {
   }
   /* END SHOP HEADER MEDIA QUERIES  */
 }
+/* END MEDIA QUERIES */
 
+/* MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
 @media screen and (max-width: 992px) {
   .tab-text {
     display: none;
   }
-}
 
-@media screen and (max-width: 992px) {
   .social-media-link .social-media a {
     font-size: 16px;
   }
@@ -1049,8 +1071,11 @@ input[type="number"] {
     display: none;
   }
 }
+/* END MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
 
-@media (max-width:492px){
+
+/* MEDIA QUERIES FOR CATEGORIES SECTION (SMALL SCREEN) */
+@media (max-width: 492px) {
   .box {
     width: auto;
     height: 80px;
@@ -1073,17 +1098,22 @@ input[type="number"] {
     font-size: 12px;
   }
 }
+/* END MEDIA QUERIES FOR CATEGORIES SECTION */
 
+/* MEDIA QUERIES FOR PAYMENT PAGE (SMALLER SCREEN SIZES) */
 @media screen and (max-width: 392px) {
   .processed-items .media .media-body h5 {
     font-size: 16px;
   }
+
   .processed-items .media .media-body p {
     font-size: 12px;
     margin-bottom: 5px;
   }
+
   .processed-items .media .media-body .total-price {
     font-size: 14px;
   }
-
 }
+/* END MEDIA QUERIES FOR PAYMENT PAGE */
+
