@@ -849,6 +849,13 @@ input[type="number"] {
 /* END SHOP HEADER SOCIAL MEDIA LINKS */
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
+@media screen and (max-width: 392px) {
+  .product-quantity .quantity {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .single-order .media img {
     height: 120px;
@@ -865,7 +872,7 @@ input[type="number"] {
 
   .product-quantity .quantity {
     font-size: 15px;
-    padding: 0 30px;
+    padding: 0 15px;
   }
 
   .product-description .quantity-and-product-details .product-quantity{
@@ -906,6 +913,10 @@ input[type="number"] {
 
   /* FAVORITES PAGE  */
   .product-with-description .product-image img{
+    height: 250px;
+  }
+
+  .single-product img{
     height: 250px;
   }
 
