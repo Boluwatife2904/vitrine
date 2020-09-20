@@ -235,7 +235,7 @@ input[type="number"] {
 .product-image .price-tag {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 15px;
   background-color: #ffffff;
   color: #112f3e;
   border-radius: 20px;
@@ -248,8 +248,8 @@ input[type="number"] {
 }
 
 .product-details .product-image .price-tag{
-  top: 30px;
-  left: 30px;
+  top: 20px;
+  left: 15px;
 }
 
 .product-image img {
@@ -466,8 +466,8 @@ input[type="number"] {
 }
 
 .product-with-description .product-image .price-tag{
-  top: 30px;
-  left: 30px;
+  top: 20px;
+  left: 15px;
 }
 
 .product-links {
