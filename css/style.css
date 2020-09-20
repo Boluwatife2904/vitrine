@@ -48,7 +48,6 @@ button:focus,
 button:active {
   outline: none;
 }
-
 /* END CSS RESET STYLE */
 
 /* START NAVIGATION MENU STYLES */
@@ -178,8 +177,6 @@ nav .cancel-icon{
 /* END CART ICON */
 
 /* END NAVIGATION MENU STYLES */
-
-
 
 /* START STYLING OF FORM ELEMENTS */
 .input-field {
@@ -471,19 +468,20 @@ input[type="number"] {
 .photos-only-section .single-product-container {
   width: 33.3%;
   padding: 5px;
-  max-height: 350px;
   margin-bottom: 15px;
   text-decoration: none;
   position: relative;
 }
 
 .photos-only-section .single-product-container img {
-  height: auto;
+  height: 280px;
   width: 100%;
   display: block;
   margin: 0 auto;
   border-radius: 10px;
 }
+/* END PHOTOS ONLY AND PHOTOS WITH PRICE SECTION */
+
 
 /* BIG PHOTO SECTION */
 .big-photo-section a {
@@ -556,7 +554,7 @@ input[type="number"] {
 
 /* END HOMEPAGE SECTION */
 
-/* START FAVORITES CARD SECTION */
+/* START PRODUCT DESCRIPTION SECTION */
 .photo-description-section .product-with-description,
 .favorite-products .product-with-description {
   margin-bottom: 25px;
@@ -593,12 +591,13 @@ input[type="number"] {
 
 .product-links .like-button:hover,
 .product-links .like-button.liked {
-  color: #ff0000;
+  color: #fb3242;
 }
 
 .product-links .like-button {
   margin-right: 10px;
 }
+/* END PRODUCT DESCRIPTION SECTION */
 
 /* END FAVORITES PAGE SECTION */
 
@@ -670,6 +669,7 @@ input[type="number"] {
   width: 100%;
   border-radius: 10px;
 }
+/* END CHECKOUT PAGE STYLES */
 
 /* UPDATE ORDER PAGE */
 .update-order .single-order {
@@ -702,8 +702,9 @@ input[type="number"] {
   border-radius: 10px;
   font-size: 20px;
 }
+/* END UPDATE ORDER PAGE */
 
-/* PAYING BY CREDIT CARD */
+/* PAYING BY CREDIT CARD AND CASH */
 .order-processed button {
   background-color: transparent;
   border: 2px solid #0074b1;
@@ -836,24 +837,28 @@ input[type="number"] {
 
 .call-to-actions a {
   display: block;
-  padding: 12px 20px;
+  padding: 14px 20px;
   border-radius: 10px;
   border: none;
   color: #ffffff;
   text-decoration: none;
   font-family: "Radomir Medium", sans-serif;
   text-align: center;
+  width: 50%;
 }
 
 .call-to-actions .cancel-button {
-  background-color: #ff0000;
+  background-color: #fb3242;
+  margin-right: 10px;
 }
 
 .call-to-actions .chat-button {
   background-color: #009e0f;
+  margin-left: 10px;
 }
+/* END PAY BY CREDIT OR CASH PAGE */
 
-/* SHOP HEADER */
+/* START SHOP HEADER (LOGO AND OTHER INFO) */
 .shop-header .main-content {
   display: flex;
   position: relative;
@@ -876,6 +881,7 @@ input[type="number"] {
   width: 70%;
 }
 
+/* END SHOP HEADER TEXT ON MOBILE */
 .shop-info-on-mobile {
   display: none;
   position: absolute;
@@ -899,7 +905,9 @@ input[type="number"] {
   text-align: center;
   margin-right: 8px;
 }
+/* END SHOP HEADER TEXT ON MOBILE */
 
+/* START SHOP HEADER TEXT ON DESKTOP */
 .shop-header .shop-info-on-desktop .shop-name {
   font-family: "Radomir Medium", sans-serif;
   color: #112f3e;
@@ -917,6 +925,8 @@ input[type="number"] {
   text-align: center;
   margin-right: 8px;
 }
+/* END SHOP HEADER TEXT ON DESKTOP */
+
 
 /* START SHOP HEADER SOCIAL MEDIA LINKS */
 .social-media-link {
@@ -1039,10 +1049,12 @@ input[type="number"] {
 
 /* MEDIA QUERIES FOR RESPONSIVENESS (SMALL SCREEN SIZES) */
 @media screen and (max-width: 480px) {
+  /* UPDATE ORDER PAGE */
   .single-order .media img {
     height: 120px;
     margin-right: 10px;
   }
+  /* END UPDATE ORDER */
 
   /* START INCREASE QUANTITY MEDIA QUERIES */
   .product-quantity a {
@@ -1136,6 +1148,9 @@ input[type="number"] {
     height: 100px;
   }
   /* END SHOP HEADER MEDIA QUERIES  */
+  .photos-only-section .single-product-container img {
+    height: 130px;
+  }
 }
 /* END MEDIA QUERIES */
 
@@ -1144,6 +1159,9 @@ input[type="number"] {
     left: 35%;
     padding: 4px 10px;
     font-size: 12px;
+  } 
+  .photos-only-section .single-product-container img {
+    height: 150px;
   }
 }
 
@@ -1153,6 +1171,7 @@ input[type="number"] {
     display: none;
   }
 
+  /* SITE HEADER SOCIAL MEDIA */
   .social-media-link .social-media a {
     font-size: 16px;
   }
@@ -1166,9 +1185,14 @@ input[type="number"] {
   .social-media-link .social-media a .name {
     font-size: 12px;
   }
+  /* SITE HEADER SOCIAL MEDIA */
 
   .hidden-text {
     display: none;
+  }
+
+  .photos-only-section .single-product-container img {
+    height: 150px;
   }
 }
 /* END MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
@@ -1215,6 +1239,9 @@ input[type="number"] {
     font-size: 14px;
   }
   /* END MEDIA QUERIES FOR PAYMENT PAGE */
+  .photos-only-section .single-product-container img {
+    height: 100px;
+  }
 }
 
 @media (max-width: 479px) {
