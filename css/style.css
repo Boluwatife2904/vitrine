@@ -380,14 +380,13 @@ input[type="number"] {
   margin-right: 5px;
 }
 
-
 /* PHOTOS ONLY SECTION */
-.photos-only-section{
+.photos-only-section {
   display: flex;
   flex-wrap: wrap;
 }
 
-.photos-only-section .single-product-container{
+.photos-only-section .single-product-container {
   width: 33.3%;
   padding: 5px;
   max-height: 350px;
@@ -396,7 +395,7 @@ input[type="number"] {
   position: relative;
 }
 
-.photos-only-section .single-product-container img{
+.photos-only-section .single-product-container img {
   height: auto;
   width: 100%;
   display: block;
@@ -404,7 +403,7 @@ input[type="number"] {
   border-radius: 10px;
 }
 
-.photos-only-section .single-product-container .tagged-price{
+.photos-only-section .single-product-container .tagged-price {
   position: absolute;
   bottom: 30px;
   left: 35%;
@@ -414,7 +413,6 @@ input[type="number"] {
   padding: 8px 15px;
   font-family: "Radomir Bold", sans-serif;
 }
-
 
 /* BIG PHOTO SECTION */
 .big-photo-section a {
@@ -1059,6 +1057,14 @@ input[type="number"] {
 }
 /* END MEDIA QUERIES */
 
+@media (max-width: 767px) {
+  .photos-only-section .single-product-container .tagged-price {
+    left: 35%;
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+}
+
 /* MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
 @media screen and (max-width: 992px) {
   .tab-text {
@@ -1076,7 +1082,7 @@ input[type="number"] {
   }
 
   .social-media-link .social-media a .name {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .hidden-text {
@@ -1084,7 +1090,6 @@ input[type="number"] {
   }
 }
 /* END MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
-
 
 /* MEDIA QUERIES FOR CATEGORIES SECTION (SMALL SCREEN) */
 @media (max-width: 492px) {
@@ -1112,8 +1117,9 @@ input[type="number"] {
 }
 /* END MEDIA QUERIES FOR CATEGORIES SECTION */
 
-/* MEDIA QUERIES FOR PAYMENT PAGE (SMALLER SCREEN SIZES) */
+/* MEDIA QUERIES FOR SMALLER SCREEN SIZES */
 @media screen and (max-width: 392px) {
+  /* MEDIA QUERIES FOR PAYMENT PAGE */
   .processed-items .media .media-body h5 {
     font-size: 16px;
   }
@@ -1126,6 +1132,22 @@ input[type="number"] {
   .processed-items .media .media-body .total-price {
     font-size: 14px;
   }
+  /* END MEDIA QUERIES FOR PAYMENT PAGE */
 }
-/* END MEDIA QUERIES FOR PAYMENT PAGE */
 
+@media (max-width: 479px) {
+  /* MEDIA QUERIES FOR PHOTOS AND PRICE */
+  .photos-only-section .single-product-container .tagged-price {
+    left: 30%;
+    bottom: 15px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .photos-only-section .single-product-container .tagged-price {
+    left: 25%;
+  }
+  /* END MEDIA QUERIES FOR PHOTOS AND PRICE */
+}
+/* MEDIA QUERIES FOR OTHER SCREEN SIZES FOR RESPONSIVENESS */
