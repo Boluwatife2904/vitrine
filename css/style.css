@@ -51,13 +51,88 @@ button:active {
 
 /* END CSS RESET STYLE */
 
-/* HEADER SECTION */
-.header-section {
-  background-color: #0074b1;
-  padding: 50px 10px 15px 10px;
-  color: #ffffff;
+/* START NAVIGATION MENU STYLES */
+/* MAIN NAV COMPONENT */
+nav {
+  background: #0074b1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+  margin-bottom: 35px;
+}
+/* END MAIN NAV COMPONENT */
+
+/* START LOGO STYLING */
+nav .logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.025rem;
+  font-family: "Radomir Medium", sans-serif;
+}
+/* END LOGO STYLING */
+
+/* START LINK STYLING */
+nav .nav-items {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  padding: 0 0 0 40px;
 }
 
+nav .nav-items li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+nav .nav-items li a {
+  color: #6EB0D2;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all .5s;
+  text-decoration: none;
+  letter-spacing: 0.025rem;
+}
+
+nav .nav-items li a:hover,
+nav .nav-items li a.active{
+  color: #ffffff;
+}
+/* END LINKS STYLING */
+
+/* START OTHER ICONS (MENU AND SEARCH) */
+nav .menu-icon,
+nav .cancel-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+nav .search-icon {
+  width: 20px;
+  text-align: center;
+  margin: 0 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+}
+
+nav .menu-icon button,
+nav .cancel-icon{
+  display: none;
+}
+/* END OTHER ICONS */
+
+/* START NAV ICON */
 .nav-icon {
   cursor: pointer;
   background-color: transparent;
@@ -80,26 +155,31 @@ button:active {
 .nav-icon .line-3 {
   width: 20px;
 }
+/* END NAV ICON */
 
-.header-section h6 {
-  font-family: "Radomir Medium", sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
+/* START CART ICON */
+.cart-icon{
+  margin: 0 20px 0 0;
 }
 
 .cart-icon a {
-  color: inherit;
+  color: #ffffff;
   text-decoration: none;
   font-size: 15px;
 }
 
 .cart-icon .cart-amount {
   background-color: #fb3242;
-  color: #ffffff;
+  color: #ffffff !important;
   border-radius: 30px;
   padding: 5px 10px;
   margin-right: 5px;
 }
+/* END CART ICON */
+
+/* END NAVIGATION MENU STYLES */
+
+
 
 /* START STYLING OF FORM ELEMENTS */
 .input-field {
@@ -348,6 +428,7 @@ input[type="number"] {
 /* END PRODUCT INCREASE AND INCREASE SECTION */
 
 /* START HOMEPAGE SECTION */
+/* TABBED CONTENT NAV MENU */
 .nav-tabs {
   justify-content: space-between;
   border: none !important;
@@ -358,7 +439,6 @@ input[type="number"] {
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-item .nav-link.active {
   border: none !important;
-  /* color: #000000; */
 }
 
 .nav-tabs .nav-item .nav-link {
@@ -379,8 +459,10 @@ input[type="number"] {
   width: 22px;
   margin-right: 5px;
 }
+/* END TABBED CONTENT NAV MENU */
 
-/* PHOTOS ONLY SECTION */
+
+/* PHOTOS ONLY AND PHOTOS WITH PRICE SECTION */
 .photos-only-section {
   display: flex;
   flex-wrap: wrap;
@@ -401,17 +483,6 @@ input[type="number"] {
   display: block;
   margin: 0 auto;
   border-radius: 10px;
-}
-
-.photos-only-section .single-product-container .tagged-price {
-  position: absolute;
-  bottom: 30px;
-  left: 35%;
-  background-color: #ffffff;
-  color: #112f3e;
-  border-radius: 20px;
-  padding: 8px 15px;
-  font-family: "Radomir Bold", sans-serif;
 }
 
 /* BIG PHOTO SECTION */
@@ -471,17 +542,28 @@ input[type="number"] {
 /* END BIG PHOTO SECTION */
 
 /* START PHOTO AND PRICE SECTION */
-
+.photos-only-section .single-product-container .tagged-price {
+  position: absolute;
+  bottom: 30px;
+  left: 35%;
+  background-color: #ffffff;
+  color: #112f3e;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-family: "Radomir Bold", sans-serif;
+}
 /* END PHOTO AND PRICE SECTION */
 
 /* END HOMEPAGE SECTION */
 
 /* START FAVORITES CARD SECTION */
+.photo-description-section .product-with-description,
 .favorite-products .product-with-description {
   margin-bottom: 25px;
   border-bottom: 2px solid #eeeeee;
 }
 
+.photo-description-section .product-with-description:last-of-type,
 .favorite-products .product-with-description:last-of-type {
   border-bottom: none;
 }
@@ -1151,3 +1233,97 @@ input[type="number"] {
   /* END MEDIA QUERIES FOR PHOTOS AND PRICE */
 }
 /* MEDIA QUERIES FOR OTHER SCREEN SIZES FOR RESPONSIVENESS */
+
+
+/* BEGIN MEDIA QUERIES FOR NAVIGATION MENU */
+@media (max-width: 1245px) {
+  nav {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 1140px) {
+  nav {
+    padding: 0px;
+  }
+
+  nav .logo {
+    flex: 2;
+    text-align: center;
+  }
+
+  nav .nav-items {
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: rgb(0, 116, 177);
+    display: inline-block;
+    transition: left 0.5s ease;
+  }
+
+  nav .nav-items.active {
+    left: 0px;
+  }
+
+  nav .nav-items li {
+    line-height: 40px;
+    margin: 30px 0;
+  }
+
+  nav .nav-items li a {
+    font-size: 20px;
+  }
+
+  nav .menu-icon {
+    display: block;
+  }
+
+  nav .search-icon,
+  nav .cart-icon,
+  nav .menu-icon button {
+    display: block;
+  }
+
+  nav .menu-icon button.hide,
+  nav .cart-icon.hide,
+  nav .search-icon.hide {
+    display: none;
+  }
+
+  nav .cancel-icon.show {
+    display: block;
+  }
+}
+
+@media (max-width: 980px) {
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 768px){
+  nav .search-icon {
+    display:none;
+  }
+
+  nav .logo{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+}
+/* END MEDIA QUERIES FOR NAVIGATION MENU */

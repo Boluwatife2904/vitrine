@@ -14,33 +14,48 @@
 
 <body>
 
-    <!-- NAVBAR SECTION -->
-    <section class="header-section mb-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="header d-flex justify-content-between align-items-center">
-                        <button class="nav-icon">
-                            <div class="line line-1"></div>
-                            <div class="line line-2"></div>
-                            <div class="line line-3"></div>
-                        </button>
-                        <div class="header-text">
-                            <h6>CHECKOUT</h6>
-                        </div>
-                        <div class="cart-icon">
-                            <a href="#">
-                                <span class="cart-amount">
-                                    $ 89, 9C
-                                </span>
-                                <span class="fa fa-shopping-cart"></span>
-                            </a>
-                        </div>
-                    </div>
+    <!-- START NAVIGATION MENU -->
+    <section class="navigation-section">
+        <header>
+            <nav class="navigation-menu">
+                <!-- NAV ICON -->
+                <div class="menu-icon">
+                    <button class="nav-icon">
+                        <div class="line line-1"></div>
+                        <div class="line line-2"></div>
+                        <div class="line line-3"></div>
+                    </button>
                 </div>
-            </div>
-        </div>
+                <!-- NAV LOGO -->
+                <div class="logo">Shopping</div>
+                <!-- NAV LINKS -->
+                <div class="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+                    <li><a href="update-order.html" class="active">Cart</a></li>
+                    <li><a href="#">Contact</a></li>
+                </div>
+                <!-- SEARCH ICON -->
+                <div class="search-icon">
+                    <span class="fas fa-search"></span>
+                </div>
+                <!-- CART ICON -->
+                <div class="cart-icon">
+                    <a href="update-order.html">
+                        <span class="cart-amount">
+                            $ 89, 9C
+                        </span>
+                        <span class="fa fa-shopping-cart icon"></span>
+                    </a>
+                </div>
+                <!-- CANCEL ICON -->
+                <div class="cancel-icon">
+                    <span class="fas fa-times"></span>
+                </div>
+            </nav>
+        </header>
     </section>
+    <!-- END NAVIGATION MENU -->
 
     <!-- START HEADER SECTION -->
     <section class="site-header">
@@ -107,6 +122,8 @@
                                         <div class="input-field">
                                             <select name="" id="">
                                                 <option value="">Payment Method</option>
+                                                <option value="Credit Card">Credit Card</option>
+                                                <option value="Cash">Payment Method</option>
                                             </select>
                                             <span class="fa fa-caret-down arrow-icon"></span>
                                         </div>
@@ -115,6 +132,8 @@
                                         <div class="input-field">
                                             <select name="" id="">
                                                 <option value="">Pickup or Delivery</option>
+                                                <option value="Pickup">Pickup</option>
+                                                <option value="Delivery">Delivery</option>
                                             </select>
                                             <span class="fa fa-caret-down arrow-icon"></span>
                                         </div>
@@ -211,6 +230,7 @@
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 
