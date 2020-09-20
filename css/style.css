@@ -945,6 +945,12 @@ input[type="number"] {
 }
 
 @media screen and (max-width: 992px) {
+  .tab-text{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
   .social-media-link .social-media a {
     font-size: 16px;
   }
