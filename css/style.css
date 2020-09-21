@@ -73,6 +73,11 @@ nav .logo {
   letter-spacing: 0.025rem;
   font-family: "Radomir Medium", sans-serif;
 }
+
+nav .logo a{
+  color: inherit;
+  text-decoration: none;
+}
 /* END LOGO STYLING */
 
 /* START LINK STYLING */
