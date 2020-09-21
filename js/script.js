@@ -14,12 +14,14 @@ $(function () {
 
 const menuBtn = document.querySelector(".menu-icon button");
 const cartBtn = document.querySelector(".cart-icon");
+const searchBtn = document.querySelector(".search-icon");
 const cancelBtn = document.querySelector(".cancel-icon");
 const items = document.querySelector(".nav-items");
 
 menuBtn.onclick = () => {
   items.classList.add("active");
   menuBtn.classList.add("hide");
+  searchBtn.style.display = "none";
   cartBtn.classList.add("hide");
   cancelBtn.classList.add("show");
 };
@@ -27,6 +29,7 @@ menuBtn.onclick = () => {
 cancelBtn.onclick = () => {
   items.classList.remove("active");
   menuBtn.classList.remove("hide");
+  searchBtn.style.display = "block";
   cartBtn.classList.remove("hide");
   cancelBtn.classList.remove("show");
 };

@@ -1444,9 +1444,9 @@ input[type="number"] {
     display: block;
   }
 
-  nav .search-icon {
+  /* nav .search-icon {
     display: none !important;
-  }
+  } */
 
   nav .nav-items li {
     line-height: 40px;
