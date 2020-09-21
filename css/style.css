@@ -1286,11 +1286,11 @@ input[type="number"] {
 
   .shop-info-on-mobile {
     display: block;
-    padding-top: 20px !important;
+    padding-top: 0px !important;
   }
 
   .shop-header .main-content .shop-logo img {
-    height: 100px;
+    height: 100px !important;
   }
 
   .categories h5 {
