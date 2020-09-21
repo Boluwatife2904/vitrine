@@ -1,3 +1,17 @@
+:root {
+  --main-blue-background-color: #0074B1;
+  --main-green-background-color: #009E0F;
+  --main-orange-background-color : #FB3242;
+  --main-blue-text-color: #112F3E;
+  --lighter-blue-background-color: #F2F8FB;
+  --lighter-blue-text-color: #A6AFB4;
+  --white-color: #FFFFFF;
+  --brownish-color: #888888;
+  --form-element-bg-color: #F6F6F6;
+  --lighter-brownish-color: #EEEEEE;
+  --black-color: #000000;
+  --nav-link-color: #6EB0D2;
+}
 @font-face {
   font-family: "Radomir";
   src: url("../fonts/Radomir.OTF") format("opentype");
@@ -53,7 +67,7 @@ button:active {
 /* START NAVIGATION MENU STYLES */
 /* MAIN NAV COMPONENT */
 nav {
-  background: #0074b1;
+  background: var(--main-blue-background-color);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -66,7 +80,7 @@ nav {
 
 /* START LOGO STYLING */
 nav .logo {
-  color: #fff;
+  color: var(--white-color);
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase;
@@ -101,7 +115,7 @@ nav .nav-items li {
   display: flex;
   height: 45px;
   padding: 4px;
-  background: #1e232b;
+  background: var(--black-color);
   min-width: 18% !important;
   max-width: 300px !important;
   border-radius: 2px;
@@ -114,7 +128,7 @@ nav .nav-items li {
   width: 100%;
   height: 100%;
   padding: 0 10px;
-  color: #fff;
+  color: var(--white-color);
   font-size: 16px;
   border: none;
   background: none;
@@ -122,16 +136,16 @@ nav .nav-items li {
 
 .navbar-search form button {
   padding: 0 15px;
-  color: #fff;
+  color: var(--white-color);
   font-size: 17px;
-  background: #0074b1;
+  background: var(--main-blue-background-color);
   border: none;
   border-radius: 2px;
   cursor: pointer;
 }
 
 nav .nav-items li a {
-  color: #6eb0d2;
+  color: var(--nav-link-color);
   font-size: 18px;
   font-weight: 500;
   transition: all 0.5s;
@@ -141,7 +155,7 @@ nav .nav-items li a {
 
 nav .nav-items li a:hover,
 nav .nav-items li a.active {
-  color: #ffffff;
+  color: var(--white-color);
 }
 /* END LINKS STYLING */
 
@@ -152,7 +166,7 @@ nav .cancel-icon {
   text-align: center;
   margin: 0 50px;
   font-size: 18px;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
   display: none;
 }
@@ -162,7 +176,7 @@ nav .search-icon {
   text-align: center;
   margin: 0 10px;
   font-size: 18px;
-  color: #fff;
+  color: var(--white-color);
   cursor: pointer;
   display: block;
 }
@@ -191,7 +205,7 @@ nav .cancel-icon {
   height: 3px;
   margin-bottom: 5px;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .nav-icon .line-2 {
@@ -209,14 +223,14 @@ nav .cancel-icon {
 }
 
 .cart-icon a {
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
   font-size: 15px;
 }
 
 .cart-icon .cart-amount {
-  background-color: #fb3242;
-  color: #ffffff !important;
+  background-color: var(--main-orange-background-color);
+  color: var(--white-color) !important;
   border-radius: 30px;
   padding: 5px 10px;
   margin-right: 5px;
@@ -235,9 +249,9 @@ nav .cancel-icon {
   width: 100%;
   padding: 20px 15px;
   border: none;
-  background-color: #f6f6f6;
+  background-color: var(--form-element-bg-color);
   border-radius: 10px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
 }
 
 /* REMOVE ARROW BUTTONS IN INPUT TYPE NUMBER */
@@ -256,9 +270,9 @@ input[type="number"] {
   width: 100%;
   padding: 20px 15px;
   border: none;
-  background-color: #f6f6f6;
+  background-color: var(--form-element-bg-color);
   border-radius: 10px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
@@ -266,7 +280,7 @@ input[type="number"] {
 }
 
 .input-field .arrow-icon {
-  color: #a6afb4;
+  color: var(--lighter-blue-text-color);
   position: absolute;
   right: 20px;
   top: 20px;
@@ -277,15 +291,15 @@ input[type="number"] {
 .input-field textarea {
   width: 100%;
   padding: 15px;
-  background-color: #f6f6f6;
+  background-color: var(--form-element-bg-color);
   border-radius: 10px;
   border: none;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
 }
 
 .confirm-button {
-  background-color: #0074b1;
-  color: #fff !important;
+  background-color: var(--main-blue-background-color);
+  color: var(--white-color) !important;
   padding: 14px 20px;
   cursor: pointer;
   outline: none;
@@ -319,26 +333,26 @@ input[type="number"] {
 
 .modal .modal-header h5 {
   font-family: "Radomir Medium", sans-serif;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 22px;
   letter-spacing: 0.025rem;
 }
 
 .modal .modal-header button {
   font-size: 25px;
-  color: #888888;
+  color: var(--brownish-color);
   opacity: 1 !important;
 }
 
 .modal .modal-body button {
-  background-color: #009e0f;
+  background-color: var(--main-green-background-color);
   border: none;
   outline: none;
   padding: 15px 20px;
   width: 100%;
   cursor: pointer;
   border-radius: 10px;
-  color: #ffffff;
+  color: var(--white-color);
   letter-spacing: 0.025rem;
   font-family: "Radomir Medium", sans-serif;
 }
@@ -354,8 +368,8 @@ input[type="number"] {
   position: absolute;
   top: 20px;
   left: 15px;
-  background-color: #ffffff;
-  color: #112f3e;
+  background-color: var(--white-color);
+  color: var(--main-blue-text-color);
   border-radius: 20px;
   padding: 8px 15px;
   font-family: "Radomir Bold", sans-serif;
@@ -380,7 +394,7 @@ input[type="number"] {
 
 .product-description .description-title {
   font-family: "Radomir Medium", sans-serif;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 22px;
 }
 
@@ -401,21 +415,21 @@ input[type="number"] {
   margin-bottom: 5px;
   display: inline-block;
   margin-right: 10px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
 }
 
 .product-description .product-price .new-price,
 .product-price .new-price {
   font-family: "Radomir Medium", sans-serif;
   font-size: 20px;
-  color: #009e0f;
+  color: var(--main-green-background-color);
 }
 
 .product-description .product-price .old-price,
 .product-price .old-price {
   font-size: 16px;
   text-decoration: line-through;
-  color: #a6afb4;
+  color: var(--lighter-blue-text-color);
   align-self: flex-end;
 }
 
@@ -460,14 +474,14 @@ input[type="number"] {
 }
 
 .product-quantity .decrease {
-  background-color: #ffffff;
-  color: #888888;
+  background-color: var(--white-color);
+  color: var(--brownish-color);
   box-shadow: 0px 0px 3px 3px rgba(212, 223, 221, 0.5);
 }
 
 .product-quantity .increase {
-  background-color: #009e0f;
-  color: #ffffff;
+  background-color: var(--main-green-background-color);
+  color: var(--white-color);
 }
 /* END PRODUCT INCREASE AND INCREASE SECTION */
 
@@ -486,11 +500,11 @@ input[type="number"] {
 }
 
 .nav-tabs .nav-item .nav-link {
-  color: #888888;
+  color: var(--brownish-color);
 }
 
 .nav-tabs .nav-item .nav-link.active {
-  color: #000000;
+  color: var(--black-color);
 }
 
 .nav-tabs .nav-item .nav-link.active img {
@@ -545,7 +559,7 @@ input[type="number"] {
 }
 
 .single-product .add-remove-like .cart-button {
-  color: #ffffff;
+  color: var(--white-color);
   padding: 10px 14px;
   line-height: normal;
   border-radius: 10px;
@@ -556,11 +570,11 @@ input[type="number"] {
 }
 
 .single-product .add-remove-like .add-to-cart {
-  background-color: #009e0f;
+  background-color: var(--main-green-background-color);
 }
 
 .single-product .add-remove-like .remove-from-cart {
-  background-color: #fb3242;
+  background-color: var(--main-orange-background-color);
 }
 
 .single-product .add-remove-like .like-product {
@@ -572,15 +586,15 @@ input[type="number"] {
   display: block;
   line-height: 40px;
   border-radius: 8px;
-  background-color: #ffffff;
-  color: #999999;
+  background-color: var(--white-color);
+  color: var(--brownish-color);
   font-size: 18px;
   text-align: center;
 }
 
 .single-product .add-remove-like .like-product.liked,
 .single-product .add-remove-like .like-product:hover {
-  color: #fb3242;
+  color: var(--main-orange-background-color);
 }
 /* END BIG PHOTO SECTION */
 
@@ -589,8 +603,8 @@ input[type="number"] {
   position: absolute;
   bottom: 30px;
   left: 35%;
-  background-color: #ffffff;
-  color: #112f3e;
+  background-color: var(--white-color);
+  color: var(--main-blue-text-color);
   border-radius: 20px;
   padding: 8px 15px;
   font-family: "Radomir Bold", sans-serif;
@@ -603,7 +617,7 @@ input[type="number"] {
 .photo-description-section .product-with-description,
 .favorite-products .product-with-description {
   margin-bottom: 25px;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--lighter-brownish-color);
 }
 
 .photo-description-section .product-with-description:last-of-type,
@@ -625,18 +639,18 @@ input[type="number"] {
 }
 
 .product-links a {
-  color: #000000;
+  color: var(--black-color);
   text-decoration: none;
   font-size: 20px;
 }
 
 .product-links .like-button {
-  color: #888888;
+  color: var(--brownish-color);
 }
 
 .product-links .like-button:hover,
 .product-links .like-button.liked {
-  color: #fb3242;
+  color: var(--main-orange-background-color);
 }
 
 .product-links .like-button {
@@ -649,21 +663,21 @@ input[type="number"] {
 /* CHECKOUT PAGE */
 .checkout-form-section h5 {
   font-size: 20px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   display: block;
   margin-bottom: 20px;
   font-family: "Radomir Medium", sans-serif;
 }
 
 .order-pricing-details {
-  border: 2px solid #eeeeee;
+  border: 2px solid var(--lighter-brownish-color);
   border-radius: 10px;
   padding: 10px 30px 0 30px;
   margin-bottom: 20px;
 }
 
 .order-pricing-details p {
-  color: #112f3e;
+  color: var(--main-blue-text-color);
 }
 
 .order-pricing-details .cost-of-items,
@@ -675,9 +689,9 @@ input[type="number"] {
 }
 
 .order-pricing-details .order-totals {
-  border-top: 2px solid #eeeeee;
+  border-top: 2px solid var(--lighter-brownish-color);
   padding-top: 10px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-family: "Radomir Bold", sans-serif;
 }
 
@@ -687,7 +701,7 @@ input[type="number"] {
 
 .order-links a {
   text-decoration: underline;
-  color: #0268b4;
+  color: var(--main-blue-background-color);
 }
 
 .delivery-location {
@@ -718,7 +732,7 @@ input[type="number"] {
 
 /* UPDATE ORDER PAGE */
 .update-order .single-order {
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--lighter-brownish-color);
   margin-bottom: 20px;
 }
 
@@ -736,7 +750,7 @@ input[type="number"] {
 }
 
 .update-and-remove .remove-button {
-  color: #fb3242;
+  color: var(--main-orange-background-color);
   display: block;
   text-decoration: none;
   background-color: #fff4f5;
@@ -752,14 +766,14 @@ input[type="number"] {
 /* PAYING BY CREDIT CARD AND CASH */
 .order-processed button {
   background-color: transparent;
-  border: 2px solid #0074b1;
+  border: 2px solid var(--main-blue-background-color);
   padding: 10px 20px;
   border-radius: 10px;
   width: 100%;
   display: block;
   margin-bottom: 30px;
   cursor: pointer;
-  color: #0074b1;
+  color: var(--main-blue-background-color);
   font-family: "Radomir Medium", sans-serif;
 }
 
@@ -776,7 +790,7 @@ input[type="number"] {
 
 .processed-items .media .media-body h5 {
   font-family: "Radomir Medium", sans-serif;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 22px;
 }
 
@@ -785,31 +799,31 @@ input[type="number"] {
 }
 
 .processed-items .media .media-body .total-price {
-  color: #009e0f;
+  color: var(--main-green-background-color);
   font-size: 18px;
   font-family: "Radomir Medium", sans-serif;
 }
 
 .customer-information a {
-  color: #fb3242;
+  color: var(--main-orange-background-color);
   text-decoration: underline;
 }
 
 .payment-information {
-  background-color: #f2f8fb;
+  background-color: var(--lighter-blue-background-color);
   padding: 30px;
   border-radius: 10px;
 }
 
 .payment-information h5 {
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 22px;
   margin-bottom: 10px;
   font-family: "Radomir Medium", sans-serif;
 }
 
 .payment-information p {
-  color: #0074b1;
+  color: var(--main-blue-background-color);
   text-decoration: underline;
   line-height: 26px;
   letter-spacing: 0.025rem;
@@ -821,8 +835,8 @@ input[type="number"] {
 }
 
 .make-a-payment a {
-  background-color: #0074b1;
-  color: #fff;
+  background-color: var(--main-blue-background-color);
+  color: var(--white-color);
   padding: 14px 20px;
   cursor: pointer;
   outline: none;
@@ -839,14 +853,14 @@ input[type="number"] {
 }
 
 .delivery-header {
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 20px;
   font-family: "Radomir Medium", sans-serif;
   margin-bottom: 15px;
 }
 
 .delivery-information {
-  border: 2px solid #eeeeee;
+  border: 2px solid var(--lighter-brownish-color);
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
@@ -861,7 +875,7 @@ input[type="number"] {
   border: none;
   outline: none;
   background-color: transparent;
-  color: #0074b1;
+  color: var(--main-blue-background-color);
   text-decoration: underline;
   cursor: pointer;
   outline: none;
@@ -877,7 +891,7 @@ input[type="number"] {
 
 .delivery-information .message p {
   margin-bottom: 0;
-  color: #fb3242;
+  color: var(--main-orange-background-color);
 }
 
 .call-to-actions a {
@@ -885,7 +899,7 @@ input[type="number"] {
   padding: 14px 20px;
   border-radius: 10px;
   border: none;
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
   font-family: "Radomir Medium", sans-serif;
   text-align: center;
@@ -893,12 +907,12 @@ input[type="number"] {
 }
 
 .call-to-actions .cancel-button {
-  background-color: #fb3242;
+  background-color: var(--main-orange-background-color);
   margin-right: 10px;
 }
 
 .call-to-actions .chat-button {
-  background-color: #009e0f;
+  background-color: var(--main-green-background-color);
   margin-left: 10px;
 }
 /* END PAY BY CREDIT OR CASH PAGE */
@@ -935,14 +949,14 @@ input[type="number"] {
 }
 
 .shop-info-on-mobile h6 {
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-family: "Radomir Medium", sans-serif;
   font-size: 18px;
 }
 
 .shop-info-on-mobile .shop-offer {
   margin-bottom: 10px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
 }
 
 .shop-info-on-mobile .shop-offer span {
@@ -955,14 +969,14 @@ input[type="number"] {
 /* START SHOP HEADER TEXT ON DESKTOP */
 .shop-header .shop-info-on-desktop .shop-name {
   font-family: "Radomir Medium", sans-serif;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 26px;
   margin-bottom: 15px;
 }
 
 .shop-header .shop-info-on-desktop .shop-offer {
   margin-bottom: 10px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
 }
 
 .shop-header .shop-info-on-desktop .shop-offer span {
@@ -977,7 +991,7 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f2f8fb;
+  background-color: var(--lighter-blue-background-color);
   padding: 15px 10px;
   border-radius: 10px;
 }
@@ -998,7 +1012,7 @@ input[type="number"] {
 }
 
 .social-media-link .social-media a {
-  color: #0074b1;
+  color: var(--main-blue-background-color);
   font-size: 18px;
   text-decoration: none;
   font-family: "Radomir Medium", sans-serif;
@@ -1012,7 +1026,7 @@ input[type="number"] {
 /* START CATEGORIES STYLING */
 .categories h5 {
   font-family: "Radomir Medium", sans-serif;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-size: 22px;
 }
 
@@ -1022,7 +1036,7 @@ input[type="number"] {
   justify-content: space-between;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid var(--lighter-brownish-color);
 }
 
 .category-section .single-category {
@@ -1036,7 +1050,7 @@ input[type="number"] {
   margin-bottom: 0;
   letter-spacing: 0.025rem;
   font-size: 15px;
-  color: #112f3e;
+  color: var(--main-blue-text-color);
   font-family: "Radomir Medium";
 }
 
@@ -1158,10 +1172,10 @@ input[type="number"] {
   left: 45%;
   margin-top: 61px;
   margin-left: -45px;
-  background-color: #0074b1;
+  background-color: var(--main-blue-background-color);
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--white-color);
   padding: 10px 30px;
   border-radius: 4px;
   text-transform: uppercase;
@@ -1171,8 +1185,8 @@ input[type="number"] {
   position: fixed;
   top: 15px;
   right: 15px;
-  color: #fff;
-  background-color: #0074b1;
+  color: var(--white-color);
+  background-color: var(--main-blue-background-color);
   border-color: none;
   opacity: 1;
   padding: 10px 17px;
@@ -1181,14 +1195,14 @@ input[type="number"] {
 
 /* FOOTER SECTION */
 .footer-section {
-  background-color: #0074b1;
+  background-color: var(--main-blue-background-color);
   padding: 15px 0;
 }
 
 .footer-section p {
   margin-bottom: 0;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 /* MEDIA QUERIES FOR RESPONSIVENESS (SMALL SCREEN SIZES) */
