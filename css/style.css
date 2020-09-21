@@ -60,7 +60,7 @@ nav {
   justify-content: space-between;
   height: 70px;
   padding: 0 100px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 /* END MAIN NAV COMPONENT */
 
@@ -476,7 +476,7 @@ input[type="number"] {
 .nav-tabs {
   justify-content: space-between;
   border: none !important;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .nav-tabs .nav-item .nav-link:hover,
@@ -908,7 +908,7 @@ input[type="number"] {
   display: flex;
   position: relative;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .shop-header .main-content .shop-logo {
@@ -978,7 +978,7 @@ input[type="number"] {
   align-items: center;
   justify-content: space-between;
   background-color: #f2f8fb;
-  padding: 20px 10px;
+  padding: 15px 10px;
   border-radius: 10px;
 }
 
@@ -1020,8 +1020,8 @@ input[type="number"] {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 2px solid #eeeeee;
 }
 
@@ -1265,7 +1265,7 @@ input[type="number"] {
     font-size: 20px;
   }
 
-  /* PAYMENT BY CC */
+  /* PAYMENT BY CC & CASH */
   .delivery-information .location p {
     margin-bottom: 10px;
   }
@@ -1286,10 +1286,15 @@ input[type="number"] {
 
   .shop-info-on-mobile {
     display: block;
+    padding-top: 0 !important;
   }
 
   .shop-header .main-content .shop-logo img {
     height: 100px;
+  }
+
+  .categories h5 {
+    font-size: 18px;
   }
   /* END SHOP HEADER MEDIA QUERIES  */
   .photos-only-section .single-product-container img {
@@ -1307,6 +1312,7 @@ input[type="number"] {
   .photos-only-section .single-product-container img {
     height: 150px;
   }
+  
 }
 
 /* MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
@@ -1338,6 +1344,25 @@ input[type="number"] {
   .photos-only-section .single-product-container img {
     height: 150px;
   }
+
+  .shop-header .main-content {
+    flex-direction: column;
+  }
+
+  .shop-header .main-content .shop-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .shop-info-on-desktop {
+    display: none;
+  }
+
+  .shop-info-on-mobile {
+    display: block;
+    padding-top: 30px;
+  }
+
 }
 /* END MEDIA QUERIES FOR MEDIUM SCREEN SIZES */
 
