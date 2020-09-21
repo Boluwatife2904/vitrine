@@ -1047,6 +1047,28 @@ input[type="number"] {
 }
 /* END CATEGORIES STYLINGS */
 
+/* SECTION SPACER */
+.product-details,
+.payment-page,
+.update-order-section,
+.favorites-section,
+.checkout-form-section,
+.homepage-section{
+  margin-bottom: 100px;
+}
+
+/* FOOTER SECTION */
+.footer-section{
+  background-color: #0074b1;
+  padding: 15px 0;
+}
+
+.footer-section p{
+  margin-bottom: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
 /* MEDIA QUERIES FOR RESPONSIVENESS (SMALL SCREEN SIZES) */
 @media screen and (max-width: 480px) {
   /* UPDATE ORDER PAGE */
